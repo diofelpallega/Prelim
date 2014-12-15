@@ -13,12 +13,13 @@ def index():
 def solve1():
     """return scoreboard"""
     x = request.args.get('team1') 
+    if x.isalpha():
+        return render_template('warning3.html')
     if int(x) > 3 :
         return render_template('warning.html')
     if int(x) < 1:
         return render_template('warning2.html')
-    if x.isalpha():
-        return render_template('warning3.html')
+
     else:
         result = score.addteam1(int(x)) 
         return render_template('score.html')
@@ -46,4 +47,6 @@ def solve3():
     return render_template('scoreboard.html', result1=result1, result2=result2)
 
 if __name__ == "__main__":
-	APP.run(debug=True)
+    import cProfile
+    APP.run(debug=True)
+    cProfile.run('APP.run(debug=True)', sort='time')

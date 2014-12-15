@@ -47,4 +47,6 @@ def solve3():
     return render_template('scoreboard.html', result1=result1, result2=result2)
 
 if __name__ == "__main__":
-	APP.run(debug=True)
+    import cProfile
+    APP.run(debug=True)
+    cProfile.run('APP.run(debug=True)', sort='time')
