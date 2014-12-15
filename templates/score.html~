@@ -18,7 +18,7 @@
 
 <center>
  <form action="/scoreboard/"> 
-   <input type="submit" value="OK">
+   <input type="submit" value="View Scoreboard">
  </form>
 <center>
 
