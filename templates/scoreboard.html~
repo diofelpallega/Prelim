@@ -1,32 +1,49 @@
  
 <html>
 <center>
-  <head> SCORE BOARD </head>
+  <head > 
+   <style>
+ 	 body {background-color:lightgray} 
+   </style> 
+    <h1 style="margin-top:100px;color:gray;"> 
+      GAME SCOREBOARD
+    </h1>
+ </head>
 </center>
 
 <body>
 
-<center>
+
+ <center>	
+<br />
+<br />
+
+<h5 style="color:white;" >
+ The current record
+</h5> 
+   <TABLE BORDER="2" CELLSPACING="1" CELLPADDING="1">
+      <CAPTION>SCORE BOARD</CAPTION>
+
+	<tr> <td ALIGN = "center"> TEAM1 </td>
+	<td ALIGN = "center"> TEAM2 </td> 
+	</tr>
+
+   <tr>
+      <td ALIGN = "center"> <h3 style="color:green;"> {{ result1 }} </h3> </td>
+      <td ALIGN = "center"> <h3 style="color:green;"> {{ result2 }} </h3></td> 
+   </tr>
+ 
+
+</TABLE>
+
+</center>
+
+<center style="margin-top:60px;">
   <form action="/">
      <input type="submit" value="BACK"/> 
   </form>
 
-The current record <br />
- <center>	
-<TABLE BORDER="2" CELLSPACING="1" CELLPADDING="1">
-<CAPTION>SCORE BOARD</CAPTION>
-
-<tr> <td ALIGN = "center"> TEAM1 </td>
-<td ALIGN = "center"> TEAM2 </td> 
-</tr>
-
-<tr>
-<td ALIGN = "center"> {{ result1 }} </td>
-<td ALIGN = "center"> {{ result2 }}</td> 
-</tr>
- 
-
-</TABLE>
+ <br />
 
 </center>
 </body>

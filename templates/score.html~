@@ -1,18 +1,28 @@
 <html>
-<head> <center><h1> Score Board </h1> </center> </head>
+<head> 
+<style>
+  body {background-color:lightgray} 
+</style>
+
+ <center>
+   <h1 style="margin-top:100px;color:gray;"> SCORE BOARD 1.0 </h1>
+   <h4 style="color:white;">  < Record ... game /> </h4>
+ </center> 
+
+</head>
 
 <body>
-<center>
+<center style="margin-top:60px;">
  <form action="/score1/">
    <label> TEAM 1  </label>
    <input type="text" name="team1" /> 
-   <input type="submit" value="OK">
+   <input type="submit" value="record">
  </form>
 
  <form action="/score2/">
    <label>  TEAM 2 </label>
    <input type="text" name="team2" />
-   <input type="submit" value="OK">
+   <input type="submit" value="record">
  </form>
 </center>
 
