@@ -1,10 +1,40 @@
-VISION:  The ScoreBoard will help the score recorders to 
-         effeciently handle their teams scores.
+VISION:  
 
-MISSION: Create a ScoreBoard and Score Recorder.
+>The ScoreBoard will help the score recorders to 
+ effeciently handle their teams scores.
+
+MISSION: 
+
+>Create a ScoreBoard and Score Recorder.
 
 OBJECTIVES: 
-    > Within 2 hours, this can be open to deployment
+
+> Within 2 hours, this can be open to deployment
 
 Principles:
-    > Scorers satisfaction is important
+> Scorers satisfaction is important
+
+
+Roles:
+  Scorer = Adds scores and views scores
+
+
+    Feature List
+STORY: 
+As a <Scorer> , I want to <record scores>, so that I can <view> the scores later
+
+1. Add score to team 1
+2. Add score to team 2
+3. View Scoreboard result
+
+    Feature Acceptance-criteria
+1. Add score to team 1
+   a.) Make sure that score is less than or equal to 3 and is valid
+   b.) make sure that the score is recorded
+2. add score to team 2
+   a.) Make sure that score is less than or equal to 3 and is valid
+   b.) make sure that the score is recorded
+3. View ScoreBoard
+   a.) make sure that the scoreboard is in table style
+   b.) make sure that scoreboard is updated
+
