@@ -26,3 +26,9 @@ class SolveTest(unittest.TestCase):
         result = score.addteam1(4)
         self.assertEqual(result, "not possible")
         self.assertEqual(score.team1, 2)
+
+    def test_if_score_cant_add2_more_than_3(self):
+        """more than test"""
+        result = score.addteam2(4)
+        self.assertEqual(result, "not possible")
+        self.assertEqual(score.team2, 2)
