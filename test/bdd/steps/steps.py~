@@ -1,0 +1,39 @@
+
+# -*- coding: utf-8 -*- 
+from nose.tools import assert_equal, assert_in
+from lettuce import *
+from webtest import TestApp
+from score.score import *
+
+
+@step(u'Given I have team1 and team2')
+def given_i_have_team1_and_team2(step):
+    assert True, "Team1 and Team2 is in on"
+
+ 
+@step(u'When I add "([^"]*)" to "([^"]*)"')
+def when_i_add_group1_to_group2(step, score, team):
+    score1 = Score()
+    result = score1.addteam1(int(str(score)))
+    assert_equal(result,1)
+
+@step(u'Then I will see:')
+def then_i_will_see(step): 
+    for row in step.hashes:
+        score1 = Score()
+        a = score1.addteam1(int(row['team1']))
+        assert_equal(a, 1)
+
+@step(u'When I add2 "([^"]*)" to "([^"]*)"')
+def when_i_add2_group1_to_group2(step, score, team):
+    score1 = Score()
+    result = score1.addteam1(int(str(score)))
+    assert_equal(result,2)
+
+@step(u'Then I will see the following:')
+def then_i_will_see_the_following(step):
+    for row in step.hashes:
+        score1 = Score()
+        a = score1.addteam1(int(row['team2']))
+        assert_equal(a, 1)
+
