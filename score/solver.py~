@@ -1,0 +1,4 @@
+class Solver(object):
+    def add(self,x,y):
+        sum = x + y
+        return sum

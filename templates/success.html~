@@ -1,0 +1,17 @@
+ 
+<html>
+<head> SCORE BOARD </head>
+
+<body>
+
+<center>
+  <form action="BACK">
+     <input type="submit" value="OK"/> 
+  </form>
+
+The current record <br />
+RECORD: {{ result }}
+
+</body>
+</html>
+
